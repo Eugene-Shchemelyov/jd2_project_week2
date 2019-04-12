@@ -1,0 +1,9 @@
+### Intellij IDEA ###
+.idea
+logs/
+*.iws
+*.iml
+*.ipr
+
+### Maven ###
+target/
