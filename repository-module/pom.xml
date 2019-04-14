@@ -10,5 +10,5 @@
 
     <groupId>com.gmail.eugene.shchemelyov.editor.repository</groupId>
     <artifactId>repository-module</artifactId>
-    <version>${snapshot.version}</version>
+    <version>1.0-SNAPSHOT</version>
 </project>

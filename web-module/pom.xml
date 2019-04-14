@@ -10,5 +10,32 @@
 
     <groupId>com.gmail.eugene.shchemelyov.editor.web</groupId>
     <artifactId>web-module</artifactId>
-    <version>${snapshot.version}</version>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.gmail.eugene.shchemelyov.editor.service</groupId>
+            <artifactId>service-module</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.0.2</version>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <addClasspath>true</addClasspath>
+                                <mainClass>com.gmail.eugene.shchemelyov.editor.web.app.App</mainClass>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
